@@ -1,14 +1,16 @@
 
-def task_decider_function(task1, task2):
 
-    if task1.description == "Wash the Dishes" or task2.description == "Wash the Dishes":
-        if task1.description == "Cook Dinner" or task2.description == "Cook Dinner":
+def task_decider_function(task1, task2):
+    tasks_list = ["Wash the Dishes", "Cook Dinner", "Clean Windows"]
+
+    if task1.description == tasks_list[0] or task2.description == tasks_list[0]:
+        if task1.description == tasks_list[1] or task2.description == tasks_list[1]:
             return "Wash the Dishes"
     
-    if task1.description == "Wash the Dishes" or task2.description == "Wash the Dishes":
-        if task1.description == "Clean Windows" or task2.description == "Clean Windows":
+    if task1.description == tasks_list[0] or task2.description == tasks_list[0]:
+        if task1.description == tasks_list[2] or task2.description == tasks_list[2]:
             return "Clean Windows"
     
-    if task1.description == "Cook Dinner" or task2.description == "Cook Dinner":
-        if task1.description == "Clean Windows" or task2.description == "Clean Windows":
+    if task1.description == tasks_list[1] or task2.description == tasks_list[1]:
+        if task1.description == tasks_list[2] or task2.description == tasks_list[2]:
             return "Cook Dinner"
