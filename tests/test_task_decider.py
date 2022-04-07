@@ -17,3 +17,6 @@ class TestTaskDecider(unittest.TestCase):
 
     def test_third_comparison(self):
         self.assertEqual("Cook Dinner", task_decider_function(self.task2, self.task3))
+
+    def test_fourth_comparison(self):
+        self.assertEqual("Clean Windows", task_decider_function(self.task3, self.task1))

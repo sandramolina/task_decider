@@ -1,5 +1,3 @@
-
-
 def task_decider_function(task1, task2):
     tasks_list = ["Wash the Dishes", "Cook Dinner", "Clean Windows"]
 
